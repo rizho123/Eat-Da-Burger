@@ -1,11 +1,25 @@
 body {
+    background: url("../img/wallpaper.png");
+    background-attachment: fixed;
+    font-family: Manjari;
+}
 
+pre {
+    font-family: Manjari;
+}
+
+.mainpic {
+    width: 100%;
+    max-width: 300px;
 }
 
 .eatme {
     position: absolute;
     transition: 0.5s;
     z-index: 1;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 35px;
 }
 
 .devour>.eatme {
@@ -16,4 +30,15 @@ body {
 .devour:hover>.eatme {
     display: inline;
 
+}
+
+.devour {
+    margin-top: -25%;
+}
+
+.burgerentry {
+    background-color: #b1b1b177;
+    border-radius: 15px;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }

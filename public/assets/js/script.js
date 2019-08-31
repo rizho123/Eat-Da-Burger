@@ -10,5 +10,11 @@ $(document).ready(function() {
         }).then(function(data) {
             location.reload();
         })
+
+        $(".mainpic").attr("src", "assets/img/burger.gif")
+
+        setTimeout(function(){
+            document.getElementById("mainpic").setAttribute("src", "assets/img/burger_s.gif")
+            }, 2000)
     })
 })

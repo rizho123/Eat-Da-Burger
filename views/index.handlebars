@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 text-center" id="top-bar">
-			<img src="" alt="burger" />
+			<img class="mainpic" id="mainpic" src="assets/img/burger_s.gif" alt="burger" />
 			<h1> Eat-Da-Burger! </h1>
 		</div>
 		<div class="col-md-6 text-center" class="task">
@@ -9,7 +9,7 @@
 			<div class="row">
 			  {{#each burger_data}}
 			  	{{#unless this.devoured}}
-				<div class="col-md-9 text-center">
+				<div class="col-md-9 text-center burgerentry">
 					<pre>{{this.id}}. {{this.burger_name}}
 					</pre>
 				</div>
