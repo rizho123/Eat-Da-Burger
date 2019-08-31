@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $(".devour-form").on("submit", function(event) {
-        event.preventDefault();
+        
 
-        var burgerId = $(this).children(".burgerId").val();
+        var burgerId = $(this).children(".burger_id").val();
         console.log(burgerId);
         $.ajax({
             method: "PUT",

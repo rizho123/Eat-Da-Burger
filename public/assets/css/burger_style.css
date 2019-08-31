@@ -1,0 +1,19 @@
+body {
+
+}
+
+.eatme {
+    position: absolute;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.devour>.eatme {
+  display: none;  
+
+}
+
+.devour:hover>.eatme {
+    display: inline;
+
+}

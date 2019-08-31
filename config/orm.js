@@ -14,7 +14,7 @@ function objectToSql(object) {
     var array = [];
 
     for (var key in object) {
-        array.push(key + "=" + ob[key]);
+        array.push(key + "=" + object[key]);
     }
 
     return array.toString();
@@ -22,11 +22,13 @@ function objectToSql(object) {
 
 var orm =  {
     all: function(tableInput, cb) {
-        var query = "SELECT * FROM" + tableInput + ";";
-        connection.query(query, function(err, results) {
-            if (err) throw err;
+        var query = "SELECT * FROM " + tableInput + ";";
+        connection.query(query, function(err, result) {
+            if (err) {
+                throw err;
+            }
 
-            cb(results);
+            cb(result);
         })
     },
 
@@ -42,10 +44,12 @@ var orm =  {
 
         console.log(query);
 
-        connection.query(query, vals, function(err, results) {
-            if (err) throw err;
+        connection.query(query, vals, function(err, result) {
+            if (err) {
+                throw err;
+            }
 
-            cb(results)
+            cb(result)
         })
     },
 
@@ -58,10 +62,27 @@ var orm =  {
         query += condition;
 
         console.log(query);
-        connection.query(query, function(err, results) {
-            if (err) throw err;
+        connection.query(query, function(err, result) {
+            if (err) {
+                throw err;
+            }
 
-            cb(results);
+            cb(result);
+        })
+    },
+
+    delete: function(table, condition, cb) {
+        var query = "DELETE FROM " + table;
+
+        query += " WHERE ";
+        query += condition;
+
+        connection.query(query, function(err, result) {
+            if (err) {
+                throw err;
+            }
+
+            cb(result)
         })
     }
 };
