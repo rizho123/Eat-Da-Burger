@@ -34,7 +34,8 @@ pre {
 }
 
 .devour {
-    margin-top: -25%;
+    float: right;
+    margin-top: -2%;
 }
 
 .burgerentry {
@@ -42,4 +43,19 @@ pre {
     border-radius: 15px;
     margin-bottom: 1%;
     margin-top: 1%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.floater {
+    float: left;
+    margin: auto;
+    padding-top: 10px;
+    margin-bottom: -3%;
+}
+
+.burgerEat {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
