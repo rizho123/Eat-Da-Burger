@@ -4,6 +4,10 @@ body {
     font-family: Manjari;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+}
+
 pre {
     font-family: Manjari;
     
