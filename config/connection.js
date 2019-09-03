@@ -8,7 +8,7 @@ var local_config = {
     database: "burgers_db"
 }
 
-var connection = mysql.createConnection(process.env.DATABASE_URL || local_config);
+var connection = mysql.createConnection(process.env.JAWSDB_URL || local_config);
 
 connection.connect(function(err) {
     if (err) {
