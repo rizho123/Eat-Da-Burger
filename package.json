@@ -11,10 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/rizho123/Eat-Da-Burger.git"
   },
-  "keywords": [
-    "McRichard"
-  ],
-  "author": "^",
+  "author": "Richard Zhou",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rizho123/Eat-Da-Burger/issues"
