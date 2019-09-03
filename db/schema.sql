@@ -1,5 +1,3 @@
-DROP database if exists burgers_db;
-
 CREATE database burgers_db;
 
 USE burgers_db;
