@@ -3,8 +3,9 @@ var exphbs = require("express-handlebars");
 var routes = require("./controllers/burgers_controller.js")
 var path = require("path")
 
-var PORT = process.env.PORT || 8080;
 var app = express();
+var PORT = process.env.PORT || 8080;
+
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
@@ -19,4 +20,4 @@ app.use(routes);
 
 app.listen(PORT, function() {
     console.log("Listening on port: ", PORT)
-})
+});
