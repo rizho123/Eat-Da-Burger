@@ -1,3 +1,10 @@
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+@font-face {
+    font-family: clipneon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/clip.ttf);
+  }
+
 body {
     background: url("../img/wallpaper.png");
     background-attachment: fixed;
@@ -145,9 +152,9 @@ body {
 
 .pagetitle {
   color:#FF00E6;
-  font-weight: bolder;
-  font-family: 'Raleway', sans-serif;
-  font-size:50px;
+  font-family: "clipneon";
+  margin-top: 2%;
+  font-size: 60px;
   animation: text-flicker 3s linear infinite;
 }
 
