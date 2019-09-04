@@ -18,3 +18,11 @@ $(document).ready(function() {
             }, 2000)
     })
 })
+
+function hover(element) {
+    $(element).attr("src", "assets/img/burger2.png")
+}
+
+function unhover(element) {
+    $(element).attr("src", "assets/img/burger.PNG")
+}

@@ -2,6 +2,7 @@ body {
     background: url("../img/wallpaper.png");
     background-attachment: fixed;
     font-family: Manjari;
+    margin-bottom: 5%;
 }
 
 .btn:active, .btn:focus {
@@ -47,6 +48,8 @@ pre {
     float: right;
     margin-top: -2%;
     background-color: #c7915e;
+    color: #ffffff;
+    border-radius: 10px;
 }
 
 .burgerentry {
@@ -87,21 +90,206 @@ pre {
     background-color: #ff3572;
     border-radius: 10px;
     border-color:#ff910000;
+    color: #ffffff;
 }
 
 .addBurger:hover, .devour:hover {
     text-shadow: 0 0 1px #000000;
     box-shadow: 4px 5px 5px 4px #47474744;
-    background-color: #ff5387;
-    border-color:#ff9100b9;
+    border-color:#58585850;
 }
 
-.addBurger:active, .devour:active {
+.devour:hover {
+    background-color: #ff5387;
+}
+
+.addBurger:hover {
+    background-color: #ff8e24;
+}
+
+.addBurger:active, .devour:active, .addBurger:focus {
     background-color: #ff3572;
     border-color: #ff910000;
+    box-shadow: 0 0 5px #47474744;
 }
 
 .burgerInput:hover {
-    border-color: #0000001e;
-    box-shadow: 0 0 
+    border-color: #0000006c;
+    box-shadow: 0 0 5px #ff3572, 4px 5px 5px 4px #47474744;
 }
+
+.burgerInput:active, .burgerInput:focus {
+    border-color: #0000006c;
+    box-shadow: 0 0 5px #35ffb2;
+}
+
+.burgerlist, .eaten {
+    margin-top: 1%;
+}
+
+/* Neon Effect */
+
+body {
+  background-color:black;
+}
+
+.neon {
+  text-align:center;
+  border:5px solid #1086e8;
+  top:150px;
+  border-radius:20px;
+  animation: border-flicker 2s linear infinite;
+  margin: 5%;
+  margin-top: 0;
+}
+
+.pagetitle {
+  color:#FF00E6;
+  font-weight: bolder;
+  font-family: 'Raleway', sans-serif;
+  font-size:50px;
+  animation: text-flicker 3s linear infinite;
+}
+
+#neonoffset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  2% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  8% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  9% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  12% {
+    opacity:0.1;
+    text-shadow: 0px 0px rgba(242, 22, 22, 1);
+  }
+  20% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  25% {
+    opacity:0.3;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  30% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  70% {
+    opacity:0.7;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  72% {
+    opacity:0.2;
+    text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  77% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  100% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  2% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  4% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  
+  8% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  70% {
+    opacity:0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  100% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  2% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  4% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  
+  19% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  21% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  23% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  80% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  83% {
+    opacity:0.4;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  87% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+}
+
+/* Neon End */
