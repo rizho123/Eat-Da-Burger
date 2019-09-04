@@ -1,14 +1,16 @@
 # Eat-Da-Burger-
 ##### A simple app that allows you to track burgers! 
 ##### [Check out the live version!](https://eat-da-burger-rz.herokuapp.com/ "Burgers")
-<img width = 950 src = "">
+<img width = 950 src = "https://github.com/rizho123/Eat-Da-Burger/blob/master/public/assets/img/Preview/title.PNG?raw=true">
 
-## Survey
-##### To begin, click on the "Begin Survey" button and a list of questions/topics will appear.
-<img width = 950 src = "">
+## Functionality
+##### You can add your own burger by using the form at the bottom.
+<img width = 950 src = "https://github.com/rizho123/Eat-Da-Burger/blob/master/public/assets/img/Preview/adding.PNG?raw=true">
 
-##### Answer all questions using the number scale provided. Click on the "Submit" button once you're done and a results window should appear!
-<img width = 950 src = "">
+##### After entering a name for your burger and clicking the "Add Burger" button, you'll see your burger under the "Burgers to be Eaten" list.
+<img width = 600 src = "https://github.com/rizho123/Eat-Da-Burger/blob/master/public/assets/img/Preview/adding2.PNG?raw=true">
 
-##### Results example:
-<img width = 950 src = "">
+##### To eat your burger, simply click on the "Devour" button next to your burger. Afterwards, your burger will be moved to the "Eaten Burgers" list.
+<img width = 600 src = "https://github.com/rizho123/Eat-Da-Burger/blob/master/public/assets/img/Preview/eating.PNG?raw=true">
+<hr>
+<img width = 600 src = "https://github.com/rizho123/Eat-Da-Burger/blob/master/public/assets/img/Preview/eaten.PNG?raw=true">

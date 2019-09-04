@@ -22,6 +22,10 @@ body {
     color: #42424259;
 }
 
+.kill {
+  color: #ff000048;
+}
+
 pre {
     font-family: Manjari;
     
